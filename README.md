@@ -10,8 +10,8 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 
 ## Resources
 
-. Data Source: election_results.csv
-. Software: Pyton 3.10.1, VSCode 1.65.2, Sublime Text Build 4126
+* Data Source: election_results.csv
+* Software: Pyton 3.10.1, VSCode 1.65.2, Sublime Text Build 4126
 
 ## Summary
 The analysis of te election show that:
