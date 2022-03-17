@@ -125,4 +125,4 @@ def Most_Votes_County(county_votes, counties):
 This code has been writen such that any data matching the same format will be able to produce an accurate analysis. 
 
 ## Extending functionality
-In order to verify the results if might be best to implement a function which will verify that the Ballot IDs are unique with a possible print out alerting an official an investigation might be needed. 
+In order to verify the results if might be best to implement a function which will verify that the Ballot IDs are unique. A print out alerting an official that an investigation might be needed can also be created. 
