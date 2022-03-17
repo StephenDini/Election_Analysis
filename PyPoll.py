@@ -86,11 +86,17 @@ with open(file_to_read) as file:
     print(f'They won by earning {candidate_percent[winner["name"]]:.1f}% of the votes')
     print("-"*65)
 
-# # Safely open the rile to write to
-# with open(file_to_write, 'w') as file:
-#     # Write three counties to the file.
-#      file.write("Countries in Election\n")
-#      file.write("-"*25 + "\n")
-#      file.write("Araphoe\n")
-#      file.write("Denver\n")
-#      file.write("Jefferson\n")
+# Safely open the rile to write to
+with open(file_to_write, 'w') as file:
+    # Write three counties to the file.
+    file.write("Election Results\n")
+    file.write("-"*25 + "\n")
+    file.write(f'Total Votes: {total_votes_cast}\n')
+    file.write("-"*25 + "\n")
+    for key in candidate_percent:
+        file.write(f"{key}: {candidate_percent[key]:.1f}% ({vote_totals[key]:,})\n")
+    file.write("-"*25 + "\n")
+    file.write(f'Winner: {winner["name"]}\n')
+    file.write(f'Winning Vote Count: {winner["count"]:,}\n')
+    file.write(f'Winning Percentage: {candidate_percent[winner["name"]]:.1f}% \n')
+    file.write("-"*25 + "\n")
