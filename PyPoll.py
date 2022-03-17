@@ -7,8 +7,8 @@ import csv
 from itertools import count
 import os
 
-file_to_read = os.path.normpath('Resources\\election_results.csv')
-file_to_write = os.path.normpath('Analysis\\election_analysis.txt')
+file_to_read = os.path.join('Resources/election_results.csv')
+file_to_write = os.path.join('Analysis/election_analysis.txt')
 
 def Winner_Check(candidates_votes, candidates):
     """ 
