@@ -86,10 +86,8 @@ with open(file_to_read) as file:
             vote_totals[row[1]] = vote_totals[row[1]] + 1
     
     total_votes_cast = len(rows)
-    # keys = vote_totals.keys()
-    # values = vote_totals.values()
 
-    # Calculating the percentag per candidate
+    # Calculating the percentag per candidate and per county
     for key in vote_totals:
         if key in candidates:
             p = (vote_totals[key] / total_votes_cast) * 100
@@ -102,20 +100,6 @@ with open(file_to_read) as file:
         
     winner = Winner_Check(vote_totals, candidates)
     county_who_voted_most = Most_Votes_County(vote_totals, county)
-
-    # print(total_votes_cast)
-    # print(header)
-    # print(candidates)
-    # print(county)
-    # for c in county:
-    #     print(vote_totals[c])
-    # print(vote_totals)
-    # # print(keys)
-    # # print(values)
-    # print(candidate_percent)
-    # print(county_percent)
-    # print(winner)
-    # print(county_who_voted_most)
 
     print("Election Results")
     print("-"*65)

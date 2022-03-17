@@ -77,7 +77,7 @@ for key in vote_totals:
             county_percent[key] = p
 ```
 
-I chose to encapsulate two functions, Winner_Check() and Most_Votes_Country() so that they could be resused easily if neccessary. Both have a docstring comment added for clarification.
+I chose to encapsulate two functions, Winner_Check() and Most_Votes_Country() so that they could be reused easily if neccessary. Both have a docstring comment added for clarification.
 
 ```python
 def Winner_Check(candidates_votes, candidates):
@@ -120,3 +120,9 @@ def Most_Votes_County(county_votes, counties):
                 leading["count"] = county_votes[keys] 
     return leading
 ```
+
+## Reusability
+This code has been writen such that any data matching the same format will be able to produce an accurate analysis. 
+
+## Extending functionality
+In order to verify the results if might be best to implement a function which will verify that the Ballot IDs are unique with a possible print out alerting an official an investigation might be needed. 
