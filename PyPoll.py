@@ -91,7 +91,7 @@ with open(file_to_write, 'w') as file:
     # Write three counties to the file.
     file.write("Election Results\n")
     file.write("-"*25 + "\n")
-    file.write(f'Total Votes: {total_votes_cast}\n')
+    file.write(f'Total Votes: {total_votes_cast:,}\n')
     file.write("-"*25 + "\n")
     for key in candidate_percent:
         file.write(f"{key}: {candidate_percent[key]:.1f}% ({vote_totals[key]:,})\n")
